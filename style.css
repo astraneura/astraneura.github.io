@@ -1,0 +1,102 @@
+.nav {
+    background-color: #222945;
+    overflow: hidden;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+.nav li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav li a.active {
+    background-color: #8791B0;
+    color: white;
+}
+
+body{
+    background-color: #F5F6F7;
+    font-family: "Commissioner", sans-serif;
+}
+.content-container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.text-content{
+    flex: 1;
+}
+
+.image-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a{
+color: #333;
+font-size: 24px;
+transition: color 0.3s ease;
+list-style: none;
+text-decoration: none;
+border: none;
+outline: none;
+}
+
+.social-links a:hover{
+color: #8791B0;
+}
+
+.social-links i{
+    vertical-align: middle;
+    font-size: 50px;
+}
+
+.artifact-image{
+    max-width: 512px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+}
