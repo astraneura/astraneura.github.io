@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/91bf4ff74d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="content/favicon.ico">
 </head>
 
 <body>
@@ -18,13 +23,162 @@
             <li><a class="active" href="projects.html">Projects</a></li>
         </ul>
     </nav>
-    <p> Fruits for Harvest: First Solo Game</p>
-    <img src="images/FirstProjectTitleCard.png" alt="First Project Title Card" class="artifact-image">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="container">
+        <div class="row fade-section">
+            <div class="col=md-12">
+                <h2>Projects</h2>
+                <p> Here are some of the projects I've developed and collaborated on, along with the skills I learned
+                    from each.</p>
+            </div>
+        </div>
+        <div class="row fade-section">
+            <div class="col-md-6">
+                <video controls class="video">
+                    <source src="content/videos/FinishedTrailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-md-6">
+                <h3>Fruits for Harvest: First Solo Game</h3>
+                <p>This was a Unity 2D platformer and the first game I made solo. While it's simple in concept, I
+                    learned a lot of C# and Unity
+                    coding principles from it.</p>
+                <div class="dropdown skills-dropdown">
+                    <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Skills
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
+                        <li><a class="dropdown-item" href="#">Unity</a></li>
+                        <li><a class="dropdown-item" href="#">C#</a></li>
+                        <li><a class="dropdown-item" href="#">Asesprite</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <hr />
+        <hr />
+
+        <div class="row fade-section">
+            <div class="col-md-6">
+                <img src="content/images/FungleHomeScreen.png" alt="Fungle Home Screen"
+                    class="img-fluid artifact-image">
+            </div>
+            <div class="col-md-6">
+                <div class="social-links">
+                    <h3>Fungle Bungle: Home Alone</h3>
+                    <a href="https://github.com/zbbevan/GIMM110-Fungle" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+                <p> This was a group developed Unity 2D platformer that used AR recognition to load the game on a plane
+                    surface and
+                    read a physical card to alter the game state. I implemented the AR plane recognition and edited the
+                    Android XML files to
+                    enable cross-device compatability.
+                </p>
+                <div class="dropdown skills-dropdown">
+                    <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Skills
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
+                        <li><a class="dropdown-item" href="#">AR Foundations</a></li>
+                        <li><a class="dropdown-item" href="#">Android XML Editing</a></li>
+                        <li><a class="dropdown-item" href="#">Unity</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row fade-section">
+            <div class="col-md-6">
+                <img src="content/images/shrodunnit_main_menu.png" alt="Shrodunnit Home Screen"
+                    class="img-fluid artifact-image">
+            </div>
+            <div class="col-md-6">
+                <div class="social-links">
+                    <h3> Schrodunnit </h3>
+                    <a href="https://github.com/zbbevan/GIMM250-Schrodunnit" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+                <p>This was a group developed Unity project that aimed to create a comic exploring the idea
+                    of Schrodinger's Cat. I wrote the script and implemented the dialogue system using the Ink
+                    plugin.
+                </p>
+                <div class="dropdown skills-dropdown">
+                    <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Skills
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
+                        <li><a class="dropdown-item" href="#">C#</a></li>
+                        <li><a class="dropdown-item" href="#">Ink</a></li>
+                        <li><a class="dropdown-item" href="#">Unity</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row fade-section">
+            <div class="col-md-6">
+                <img src="content/images/mobile_site.png" alt="A screen capture of a part of the site's homepage"
+                    class="img-fluid artifact-image">
+            </div>
+            <div class="col-md-6">
+                <div class="social-links">
+                    <h3> Mobile Data Narrative Site </h3>
+                    <a href="https://github.com/astraneura/mobile-data-narrative" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+                <p>
+                    This was an HTML site I designed to explore the playing habits of Animal Crossing players.
+                    I used HTML, CSS, JavaScript, D3.js, and React.js to create a responsive site that displays
+                    the data in an interactive way.
+                </p>
+                <div class="dropdown skills-dropdown">
+                    <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Skills
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
+                        <li><a class="dropdown-item" href="#">HTML</a></li>
+                        <li><a class="dropdown-item" href="#">CSS</a></li>
+                        <li><a class="dropdown-item" href="#">Javascript</a></li>
+                        <li><a class="dropdown-item" href="#">React.js</a></li>
+                        <li><a class="dropdown-item" href="#">D3.js</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr />
+    </div>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                } else {
+                    entry.target.classList.remove('fade-in'); // optional: fade out on scroll up
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+    
+        document.querySelectorAll('.fade-section').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+    
 </body>
 
 </html>
