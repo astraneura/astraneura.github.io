@@ -9,10 +9,13 @@
         integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/91bf4ff74d.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap">
+    </noscript>
+
+    <script src="https://kit.fontawesome.com/91bf4ff74d.js" crossorigin="anonymous" defer></script>
     <link rel="icon" type="image/x-icon" href="content/favicon.ico">
 </head>
 
@@ -173,12 +176,12 @@
         }, {
             threshold: 0.1
         });
-    
+
         document.querySelectorAll('.fade-section').forEach((section) => {
             observer.observe(section);
         });
     </script>
-    
+
 </body>
 
 </html>
