@@ -169,3 +169,7 @@ color: #8791B0;
     opacity: 1;
     transform: translateY(0);
 }
+
+h1{
+    padding-top: 15px;
+}
