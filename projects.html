@@ -26,29 +26,29 @@
             <li><a class="active" href="projects.html">Projects</a></li>
         </ul>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row fade-section">
-            <div class="col=md-12">
+            <div class="col-md-12">
                 <h2>Projects</h2>
                 <p> Here are some of the projects I've developed and collaborated on, along with the skills I learned
                     from each.</p>
             </div>
         </div>
         <div class="row fade-section">
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <video controls class="video">
                     <source src="content/videos/FinishedTrailer.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <h3>Fruits for Harvest: First Solo Game</h3>
                 <p>This was a Unity 2D platformer and the first game I made solo. While it's simple in concept, I
                     learned a lot of C# and Unity
                     coding principles from it.</p>
                 <div class="dropdown skills-dropdown">
                     <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        aria-expanded="false">
                         Skills
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
@@ -63,7 +63,7 @@
         <hr />
 
         <div class="row fade-section">
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <img src="content/images/FungleHomeScreen.png" alt="Fungle Home Screen"
                     class="img-fluid artifact-image">
             </div>
@@ -82,7 +82,7 @@
                 </p>
                 <div class="dropdown skills-dropdown">
                     <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        aria-expanded="false">
                         Skills
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
@@ -97,11 +97,11 @@
         <hr />
 
         <div class="row fade-section">
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <img src="content/images/shrodunnit_main_menu.png" alt="Shrodunnit Home Screen"
                     class="img-fluid artifact-image">
             </div>
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <div class="social-links">
                     <h3> Schrodunnit </h3>
                     <a href="https://github.com/zbbevan/GIMM250-Schrodunnit" target="_blank" rel="noopener noreferrer">
@@ -114,7 +114,7 @@
                 </p>
                 <div class="dropdown skills-dropdown">
                     <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        aria-expanded="false">
                         Skills
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
@@ -129,11 +129,11 @@
         <hr />
 
         <div class="row fade-section">
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <img src="content/images/mobile_site.png" alt="A screen capture of a part of the site's homepage"
                     class="img-fluid artifact-image">
             </div>
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <div class="social-links">
                     <h3> Mobile Data Narrative Site </h3>
                     <a href="https://github.com/astraneura/mobile-data-narrative" target="_blank"
@@ -148,7 +148,7 @@
                 </p>
                 <div class="dropdown skills-dropdown">
                     <a class="btn btn-link dropdown-toggle skills-label" href="#" role="button" id="skillsDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false">
+                        aria-expanded="false">
                         Skills
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
@@ -180,6 +180,26 @@
         document.querySelectorAll('.fade-section').forEach((section) => {
             observer.observe(section);
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const dropdowns = document.querySelectorAll('.skills-dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('a');
+        const menu = dropdown.querySelector('.dropdown-menu');
+
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            menu.classList.toggle('visible');
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!dropdown.contains(e.target)) {
+                menu.classList.remove('visible');
+            }
+        });
+    });
+});
     </script>
 
 </body>
