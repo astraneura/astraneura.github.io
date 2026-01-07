@@ -1,0 +1,181 @@
+:root {
+    --base-color: #1e1626;
+    --sidebar-color: #1E1626;
+    --text-color: white;
+    --shadow-color: #d991ff;
+}
+
+body {
+    margin: 0;
+    font-family: "Commissioner", sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-image {
+    background-image: url("../images/bckgd-img.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .75;
+}
+
+.sidenav {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: var(--sidebar-color);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 10px 15px 10px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: var(--text-color);
+    display: block;
+}
+
+.sidenav a:hover {
+    text-shadow: 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color);
+    color: var(--text-color);
+}
+
+.sidenav h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.main {
+    margin-left: 240px;
+    color: var(--text-color);
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.main::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 240px;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/bckgd-img.jpg");
+    opacity: .85;
+    z-index: 0;
+    text-align: center;
+}
+
+.main>* {
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color), 0 0 10px var(--shadow-color);
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+h4,
+h5 {
+    text-align: center;
+    font-weight: 150;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 48px;
+    transition: color 0.3s ease;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+.sidenav-dropdown {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.sidenav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 160px;
+    left: 0;
+    background-color: var(--sidebar-color);
+    z-index: 10;
+    font-size: 14px !important;
+}
+
+.game{
+    display: none;
+}
+
+.website{
+    display: none;
+}
+
+.project {
+    display: none;
+}
+
+.about{
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.contact{
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
