@@ -1,271 +1,132 @@
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"
-        defer></script>
-    <link rel="stylesheet" href="content/Styles/style.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap">
-    </noscript>
-    <script rel="preload" src="https://kit.fontawesome.com/91bf4ff74d.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="content/favicon.ico">
-    <title>Teagan Foster - Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teagan Foster | Game Programmer & Designer</title>
+  <meta name="description" content="Teagan Foster — game programmer and designer specializing in Unity, C#, gameplay systems, and interactive experiences.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <aside>
-            <div class="sidenav">
-                <nav>
-                    <h1>Teagan Foster</h1>
-                    <a href="#about" class="nav-link mb-3">About Me</a>
-                    <div class="sidenav-dropdown">
-                        <a href="#projects" class="nav-link mb-3">Projects</a>
-                        <div class="dropdown-content">
-                            <a href="#" onclick="showAll()">All Projects</a>
-                            <a href="#" onclick="showGames()">Games</a>
-                            <a href="#" onclick="showWebsites()">Websites</a>
-                        </div>
-                    </div>
-                    <a href="Teagan_Foster_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-link mb-3">Resume</a>
-                    <a href="#contact" class="nav-link mb-3">Contact</a>
-                </nav>
-            </div>
-        </aside>
-        <div class="main">
-            <div class="row">
-                <div class="col-12">
-                    <h1 id="about">About Me</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="about">
-                        <p>Hello! I'm Teagan Foster, a passionate student game developer with a love for creating immersive and
-                            engaging experiences. With a background in computer science and a keen eye for design, I
-                            specialize in bringing ideas to life through interactive media. Whether it's crafting
-                            intricate
-                            gameplay mechanics or designing captivating worlds, I thrive on the challenge of pushing the
-                            boundaries of what's possible in gaming. </p>
-                            <p>When I'm not coding or designing, you can find me
-                            exploring the latest trends in technology, playing video games, or indulging in my love for
-                            storytelling through various mediums.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="project">
-                        <h1 id="projects">Projects</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="game">
-                        <a href="https://youtu.be/BJF7vK7_OuU" target="_blank" rel="noopener noreferrer">
-                            <img src="content/images/CafeSim.png" alt="Cafe Sim Prototype"
-                                class="img-fluid artifact-image">
-                        </a>
-                        <br />
-                        <h4>Cafe Sim Prototype</h4>
-                        <p>
-                            A Unity prototype for a cafe simulation game, currently in development.
-                            The prototype features basic mechanics - an ordering system, resetting on player errors, and
-                            a
-                            basic patience system.
-                        </p>
-                        <h5>Skills and Tools</h5>
-                        <ul>
-                            <li>C#</li>
-                            <li>Scriptable Objects</li>
-                        </ul>
-                    </div>
-                    <br />
-                    <div class="game">
-                        <a href="https://www.youtube.com/watch?v=AKOUgl77jOY" target="_blank" rel="noopener noreferrer">
-                            <img src="content/images/shrodunnit_main_menu.png" loading="lazy"
-                                alt="Shrodunnit Home Screen" class="img-fluid artifact-image">
-                        </a>
-                        <br />
-                        <a href="https://github.com/zbbevan/GIMM250-Schrodunnit" target="_blank"
-                            rel="noopener noreferrer">
-                            <h4>Schrodunnit</h4>
-                        </a>
-                        <p>A group developed Unity project that aimed to create a comic exploring the idea
-                            of Schrodinger's Cat. I wrote the script and implemented the dialogue system using the Ink
-                            plugin.
-                        </p>
-                        <h5>Skills and Tools</h5>
-                        <ul>
-                            <li>C#</li>
-                            <li>Ink</li>
-                        </ul>
-                    </div>
-                    <br />
-                    <div class="game">
-                        <a href="https://youtu.be/Lx4IVxrPbus" target="_blank" rel="noopener noreferrer">
-                            <img src="content/images/FirstProjectTitleCard.png" loading="lazy"
-                                alt="First Project Title Card" class="img-fluid artifact-image">
-                        </a>
-                        <br />
-                        <h4>Fruits for Harvest</h4>
-                        <p>A simple Unity 2D platformer and the first game I made solo. While it's simple in concept, it
-                            was
-                            a
-                            great first step into game development as a whole.
-                        </p>
-                        <h5>Skills and Tools</h5>
-                        <ul>
-                            <li>C#</li>
-                            <li>Asesprite</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <br />
-                    <div class="game">
-                        <a href="https://youtu.be/F7FWNDPST6w" target="_blank" rel="noopener noreferrer">
-                            <img src="content/images/UnrealProject.png" alt="Unreal Project"
-                                class="img-fluid artifact-image">
-                        </a>
-                        <br />
-                        <h4>Ghost Hunting</h4>
-                        <p>
-                            A solo Unreal Engine game that featured a third-person perspective and basic AI.
-                            The player must use traps to immobilize the ghost to capture it.
-                        </p>
-                        <h5>Skills and Tools</h5>
-                        <ul>
-                            <li>Unreal Engine</li>
-                            <li>Blueprint Scripting</li>
-                        </ul>
-                    </div>
-                    <br />
-                    <br />
-                    <div class="website">
-                        <a href="https://github.com/astraneura/mobile-data-narrative" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="content/images/mobile_site.png" loading="lazy"
-                                alt="A screen capture of a part of the site's homepage"
-                                class="img-fluid artifact-image">
-                        </a>
-                        <br />
-                        <h4> Mobile Data Narrative Site </h4>
-                        <p>
-                            An HTML site I designed to explore the playing habits of Animal Crossing players.
-                            I used HTML, CSS, JavaScript, D3.js, and React.js to create a responsive site that displays
-                            the data in an interactive way.
-                        </p>
-                        <h5>Skills and Tools</h5>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>React.js</li>
-                            <li>D3.js</li>
-                        </ul>
-                    </div>
-                    <br />
-                    <div class="game">
-                        <a href="https://github.com/zbbevan/GIMM110-Fungle" target="_blank" rel="noopener noreferrer">
-                            <img src="content/images/FungleHomeScreen.png" loading="lazy" alt="Fungle Home Screen"
-                                class="img-fluid artifact-image">
-                        </a>
-                        <br />
-                        <h4>Fungle Bungle: Home Alone</h4>
-                        <p> A group developed Unity 2D platformer that used AR recognition to load the game on a plane
-                            surface and
-                            read a physical card to alter the game state. I implemented the AR plane recognition and
-                            edited
-                            the
-                            Android XML files to
-                            enable cross-device compatability.
-                        </p>
-                        <h5>Skills and Tools</h5>
-                        <ul>
-                            <li>AR Foundations</li>
-                            <li>Android XML Editing</li>
-                            <li>C#</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <h1 id="contact">Contact Me</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="contact">
-                        <p>If you'd like to get in touch, feel free to reach out via any of my social media platforms or
-                            email.</p>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/teaganfoster/" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/astraneura" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-square-github"></i>
-                            </a>
-                            <a href="mailto:teagan.e.foster@gmail.com">
-                                <i class="fa-solid fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary navigation">
+    <a class="logo" href="index.html">Teagan Foster</a>
+    <div class="nav-links">
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="Teagan_Foster_Resume.pdf">Resume</a>
+      <a href="mailto:teagan.e.foster@gmail.com">Contact</a>
     </div>
+  </nav>
+</header>
 
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Game Programmer · Designer</p>
+        <h1>Building interactive worlds and the systems behind them.</h1>
+        <p class="lede">
+          I'm a current GIMM student focused on gameplay programming, interactive systems,
+          and player-facing mechanics. My primary tools are Unity and C#, with
+          additional experience in Unreal, AR/XR, dialogue systems, and web development.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="projects.html">View projects</a>
+          <a class="button" href="Teagan_Foster_Resume.pdf">View resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="featured">
+    <div class="container">
+      <p class="eyebrow">Featured work</p>
+      <h2>Projects that show how I build.</h2>
+
+      <article class="featured">
+        <div class="featured-media">
+          <!-- Replace with a real gameplay screenshot/video -->
+          <img src="content/videos/startscreen.gif" alt="Monster Café gameplay gif of the start screen">
+        </div>
+        <div class="featured-body">
+          <div class="project-meta">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Gameplay</span>
+          </div>
+          <h3>Unusual Grounds</h3>
+          <p class="muted">
+            A cozy horror café simulator where players prepare customized drinks
+            for strange monster customers.
+          </p>
+          <p class="muted">
+            This was a completely solo project where I designed and implemented the gameplay systems, customer interactions, and progression mechanics. 
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="projects/unusual-grounds.html">View Project</a>
+            <a class="button" href="https://astraneura.itch.io/unusual-grounds">Play</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">More work</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-card-media">
+            <img src="content/images/shrodunnit_main_menu.png" alt="Schrodunnit gameplay">
+          </div>
+          <div class="project-card-body">
+            <div class="project-meta">
+              <span class="tag">Unity</span><span class="tag">Ink</span>
+            </div>
+            <h3>Schrodunnit</h3>
+            <p class="muted">Interactive comic with branching dialogue and custom text systems.</p>
+            <a class="button" href="projects/shrodunnit.html">View Project</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-media">
+            <img src="content/images/printer_pal.png" alt="XR project screenshot">
+          </div>
+          <div class="project-card-body">
+            <div class="project-meta">
+              <span class="tag">XCode</span><span class="tag">AR</span><span class="tag">iOS</span>
+            </div>
+            <h3>PrinterPal</h3>
+            <p class="muted">An iOS mobile app that uses AR image recognition to guide users through using a 3D printer.</p>
+            <a class="button" href="projects/printerpal.html">View Project</a>
+          </div>
+        </article>
+
+        <!-- <article class="project-card">
+          <div class="project-card-media">
+            <img src="assets/data-project.jpg" alt="Data narrative website">
+          </div>
+          <div class="project-card-body">
+            <div class="project-meta">
+              <span class="tag">JavaScript</span><span class="tag">D3</span>
+            </div>
+            <h3>Data Narrative</h3>
+            <p class="muted">An interactive web experience using data visualization and storytelling.</p>
+            <a class="button" href="projects/data-narrative.html">View project</a>
+          </div>
+        </article> -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <span>© 2026 Teagan Foster</span>
+    <span><a href="mailto:teagan.e.foster@gmail.com">Email</a> · <a href="https://github.com/astraneura">GitHub</a> · <a href="https://www.linkedin.com/in/teaganfoster">LinkedIn</a></span>
+  </div>
+</footer>
+</body>
 </html>
-
-<script>
-    function showAll() {
-        let games = document.getElementsByClassName("game");
-        let websites = document.getElementsByClassName("website");
-        let title = document.getElementsByClassName("project");
-        title[0].style.display = "block";
-        for (let i = 0; i < games.length; i++) {
-            games[i].style.display = "block";
-        }
-        for (let j = 0; j < websites.length; j++) {
-            websites[j].style.display = "block";
-        }
-    }
-
-    function showGames() {
-        let games = document.getElementsByClassName("game");
-        let websites = document.getElementsByClassName("website");
-        let title = document.getElementsByClassName("project");
-        title[0].style.display = "block";
-        for (let i = 0; i < games.length; i++) {
-            games[i].style.display = "block";
-        }
-        for (let j = 0; j < websites.length; j++) {
-            websites[j].style.display = "none";
-        }
-    }
-
-    function showWebsites() {
-        let games = document.getElementsByClassName("game");
-        let websites = document.getElementsByClassName("website");
-        let title = document.getElementsByClassName("project");
-        title[0].style.display = "block";
-        for (let i = 0; i < games.length; i++) {
-            games[i].style.display = "none";
-        }
-        for (let j = 0; j < websites.length; j++) {
-            websites[j].style.display = "block";
-        }
-    }
-</script>

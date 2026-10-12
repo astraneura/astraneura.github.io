@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monster Café | Teagan Foster</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary navigation">
+    <a class="logo" href="../index.html">Teagan Foster</a>
+    <div class="nav-links">
+      <a href="../projects.html">Projects</a>
+      <a href="../about.html">About</a>
+      <a href="../resume.pdf">Resume</a>
+      <a href="mailto:teagan.e.foster@gmail.com">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="case-hero">
+    <div class="container case-hero-grid">
+      <div>
+        <p class="eyebrow">Featured project</p>
+        <h1>Monster Café Simulator</h1>
+        <p class="lede">
+          A cozy horror café simulator where players prepare customized drinks
+          for monster customers while trying to earn enough money to keep the café open.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="https://youtu.be/S_TfvjFwm_4">Demo Video</a>
+          <a class="button" href="https://github.com/astraneura/Unusual-Grounds">GitHub</a>
+          <a class="button" href="https://astraneura.itch.io/unusual-grounds">Play</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div>
+          <span class="meta-label">Role</span>
+          <strong>Solo developer / designer</strong>
+        </div>
+        <div>
+          <span class="meta-label">Engine</span>
+          <strong>Unity 6</strong>
+        </div>
+        <div>
+          <span class="meta-label">Language</span>
+          <strong>C#</strong>
+        </div>
+        <div>
+          <span class="meta-label">Focus</span>
+          <strong>Gameplay systems</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="media-large">
+      <img src="../content/videos/startscreen.gif" alt="Monster Café gameplay screenshot">
+    </div>
+
+    <section class="section">
+      <div class="prose">
+        <p class="eyebrow">Overview</p>
+        <h2>The game</h2>
+        <p>
+          Unusual Grounds is a cozy café simulator where players prepare 
+          drinks for strange monster customers. These drinks vary from being a named recipe with defined 
+          instructions to being a completely custom drink where the player can choose any combination of ingredients, 
+          as long as it satisfies the customer's order. 
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="prose">
+        <p class="eyebrow">My contribution</p>
+        <h2>What I built</h2>
+        <ul>
+          <li>Customer spawning and customer archetypes.</li>
+          <li>Order generation and order validation.</li>
+          <li>Drink customization and drink-property tracking.</li>
+          <li>Customer patience and satisfaction systems.</li>
+          <li>Machine interaction architecture.</li>
+          <li>Day progression and end-of-day conditions.</li>
+          <li>Sound design and audio feedback.</li>
+          <li>UI and UX for order display, drink customization, and customer feedback.</li>
+          <li>3D modeling for the café environment and characters.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="prose">
+        <p class="eyebrow">Technical challenge</p>
+        <h2>Designing reusable customer behavior</h2>
+        <p>
+          One issue that kept occuring during development was that customers would get stuck
+          upon order completion. This was due to a flag being missed on the customer object that was
+          responsible for removing the customer from the café. 
+          I solved this by creating an inheritance class that simplified the customer's variables and allowed for
+          a more reusable customer class.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Asset Showreel</p>
+      <div class="gallery">
+        <figure>
+        <a class="button primary" href="https://youtu.be/WFz1vMdvdgk">Showreel Video</a>
+        </figure>
+        <figure>
+<a class="button primary" href="../content/documents/Foster_UXResults.pdf">UX Testing Results</a>
+        </figure>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <a href="../projects.html">← Back to projects</a>
+    <span>© 2026 Teagan Foster</span>
+  </div>
+</footer>
+</body>
+</html>
